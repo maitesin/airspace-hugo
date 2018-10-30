@@ -25,6 +25,14 @@
               {{ range .Site.Menus.header }}
                 <li><a href="{{ .URL }}/">{{ .Name }}</a></li>
               {{ end }}
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ .Site.Params.Language }} <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="{{ .Site.BaseURL }}/en">English</li>
+                    <li><a href="{{ .Site.BaseURL }}/es">Spanish</li>
+                    <li><a href="{{ .Site.BaseURL }}/ca">Catalan</li>
+                  </ul>
+                </li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
