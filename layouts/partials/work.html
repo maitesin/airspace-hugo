@@ -22,7 +22,7 @@
                 <ul id="portfolio-contant-active">
                   {{ range .Site.Data.work.portfolio }}
                     <li class="mix {{ .category }}">
-                      <a href="{{ .url }}">
+                      <a href="{{ .url | absLangURL }}">
                         <img src="{{ $.Site.BaseURL }}{{ .image }}" alt="">
                         <div class="overly">
                           <div class="position-center">
