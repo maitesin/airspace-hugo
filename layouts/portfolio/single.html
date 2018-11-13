@@ -28,7 +28,7 @@
 	  </section>
 	</div>
 	<p class="center-text" style="padding: 30px;">
-	  <a class="btn btn-main" href="{{ $.Site.BaseURL }}/en/portfolio">Back to portfolio</a>
+  <a class="btn btn-main" href="{{ $.Site.BaseURL }}{{ $.Site.Params.PortfolioUrl }}">{{ $.Site.Params.PortfolioName }}</a>
 	</p>
 
 	{{ if and (isset .Site.Params "call") (.Site.Params.call.enable) }}
