@@ -1,14 +1,34 @@
-{{ partial "global-header.html" . }}
+<!-- Slider Start -->
+<section id="global-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h1>Another fancy title</h1>
+                    <p>Super cool subtitle</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Service Start -->
-<section id="service">
+<section id="association">
   <div class="container">
+
+    <!-- Intro -->
+    <div class="row">
+      <div class="section-title">
+        <h2>{{ .Site.Data.association.title }}</h2>
+        <p>{{ .Site.Data.association.subtitle }}</p>
+      </div>
+    </div>
 
     <!-- Content -->
     <div class="row">
-      {{ range .Site.Data.service.content }}
-      <div class="col-sm-6 col-md-4">
-        <div class="service-item">
+      {{ range .Site.Data.association.content }}
+      <div class="col-sm-6 col-md-3">
+        <div class="association-item">
           <i class="{{ .icon }}"></i>
           <h4>{{ .name }}</h4>
           <p>{{ .text }}</p>
