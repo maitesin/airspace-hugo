@@ -19,14 +19,14 @@
     <!-- Intro -->
     <div class="row">
       <div class="section-title">
-        <h2>{{ .Site.Data.association.title }}</h2>
-        <p>{{ .Site.Data.association.subtitle }}</p>
+        <h2>{{ .Site.Params.associations.title }}</h2>
+        <p>{{ .Site.Params.associations.subtitle }}</p>
       </div>
     </div>
 
     <!-- Content -->
     <div class="row">
-      {{ range .Site.Data.association.content }}
+      {{ range .Site.Params.associations.item }}
       <div class="col-sm-6 col-md-3">
         <div class="service-item">
           <img src="{{ $.Site.BaseURL }}img/{{ .image }}" alt="">
