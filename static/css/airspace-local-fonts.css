@@ -116,3 +116,13 @@
   url('../fonts/volkhov-v9-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
   url('../fonts/volkhov-v9-latin-italic.svg#Volkhov') format('svg'); /* Legacy iOS */
 }
+@font-face {
+  font-family: "Martina";
+  src: url("../fonts/Martina-Regular.eot");
+  src: url("../fonts/Martina-Regular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/Martina-Regular.woff2") format("woff2"),
+  url("../fonts/Martina-Regular.woff") format("woff"),
+  url("../fonts/Martina-Regular.ttf") format("truetype"),
+  url("../fonts/Martina-Regular.svg#Martina") format("svg");
+}
+
