@@ -1,21 +1,34 @@
 <!-- Content Start -->
+<section id="global-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h1>Last fancy title or quote</h1>
+                    <p>Super cool subtitle</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id="testimonial">
   <div class="container">
     <!-- Header -->
     <div class="row">
       <div class="section-title text-center">
-        <h2>{{ .Site.Data.testimonial.title }}</h2>
-        <p>{{ .Site.Data.testimonial.paragraph }}</p>
+        <h2>{{ .Site.Params.testimonial.title }}</h2>
+        <p>{{ .Site.Params.testimonial.paragraph }}</p>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-12"> <!-- Make it 6 again to include the testimonial -->
         <div class="block">
           <!-- Content -->
           <ul class="counter-box clearfix">
-            {{ range .Site.Data.testimonial.numbers }}
-            <li>
+            {{ range .Site.Params.testimonial.item}}
+            <li class="col-md-3">
               <div class="block">
                 <i class="{{ .icon }}"></i>
                 <h4 class="counter">{{ .counter }}</h4>
@@ -26,10 +39,11 @@
           </ul>
         </div>
       </div>
+      <!-- Hide testimonial
       <div class="col-md-6">
         <div class="testimonial-carousel">
           <div id="testimonial-slider" class="owl-carousel">
-            {{ range .Site.Data.testimonial.people }}
+            {{ range .Site.Params.testimonial.people }}
             <div>
                 <img src="img/cotation.png" alt="IMG">
                 <p>"{{ .text }}"</p>
@@ -42,6 +56,7 @@
           </div>
         </div>
       </div>
+      -->
     </div>
   </div>
 </section>

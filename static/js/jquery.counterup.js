@@ -66,6 +66,7 @@
                     delete $this.data('counterup-nums');
                     $this.data('counterup-nums', null);
                     $this.data('counterup-func', null);
+                    $this.text($this.text() + '+')
                 }
             };
             $this.data('counterup-func', f);
