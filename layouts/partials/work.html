@@ -12,7 +12,7 @@
                   {{ range .Site.Params.portfolio.item }}
                     {{ $categories = $categories | append .category }}
                   {{ end }}
-                    <li class="filter" data-filter="all">Everything</li>
+                  <li class="filter" data-filter="all">{{ .Site.Params.portfolio.group }}</li>
                   {{ range ( $categories | uniq ) }}
                     <li class="filter" data-filter=".{{ . }}">{{ . }}</li>
                   {{ end }}
