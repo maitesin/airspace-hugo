@@ -219,6 +219,38 @@ font header .navbar-default .navbar-nav li a:hover {
   line-height: 1.8;
 }
 /*--
+	cpd Start
+--*/
+#cpd {
+  /*text-align: center;*/
+  padding: 90px 0;
+}
+#cpd .cpd-item {
+  font-size: 1.3em;
+}
+#cpd .cpd-item-by {
+  font-size: 0.7em;
+}
+#cpd .cpd-item i {
+  font-size: 60px;
+  color: #4A4656;
+}
+#cpd h1 {
+  text-align: center;
+}
+#cpd .cpd-item h4 {
+  padding-top: 20px;
+  margin: 0;
+  color: #666;
+}
+#cpd .cpd-item p {
+  color: #888;
+  padding-top: 10px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+}
+/*--
 	call-to-action Start
 --*/
 #call-to-action {
