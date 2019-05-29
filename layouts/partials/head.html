@@ -9,6 +9,10 @@
 <meta name="robots" content="{{ with .Params.robots }}{{ . }}{{ else }}{{ .Site.Params.robots }}{{ end }}">
 {{ end }}
 
+{{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
 <!-- Place favicon.ico and apple-touch-icon.png in the root directory
      or place appropriate <link .../> etc in favicon.html partial -->
 {{ partial "favicon.html" . }}
