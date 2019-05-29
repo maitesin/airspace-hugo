@@ -1,0 +1,64 @@
+{{ partial "global-header.html" . }}
+
+<!-- CPD Start -->
+<section id="cpd">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="block">
+              <!-- <div class="cpd-menu">
+                <ul>
+                  {{ $categories := slice }}
+                  {{ range .Site.Params.cpd.item }}
+                    {{ $categories = $categories | append .category }}
+                  {{ end }}
+                  <li class="filter" data-filter="all">{{ .Site.Params.cpd.group }}</li>
+                  {{ range ( $categories | uniq ) }}
+                    <li class="filter" data-filter=".{{ . }}">{{ . }}</li>
+                  {{ end }}
+                </ul>
+              </div> -->
+              <div class="col-md-2"></div>
+              <div class="col-md-8">
+                <h1>{{ .Site.Params.cpd.CoursesTitle }}</h1>
+                <ul>
+                  {{ range .Site.Params.cpd.course }}
+                    <li>
+                      <div>
+                        <div class="cpd-item">{{.name}} <span class="cpd-item-by"> ({{.by}}, {{.date}})</span></div>
+                      </div>
+                    </li>
+                  {{ end }}
+                </ul>
+                <h1>{{ .Site.Params.cpd.WebinarsTitle }}</h1>
+                <ul>
+                  {{ range .Site.Params.cpd.webinar }}
+                    <li>
+                      <div>
+                          <div class="cpd-item">{{.name}} <span class="cpd-item-by"> ({{.by}}, {{.date}})</span></div>
+                      </div>
+                    </li>
+                  {{ end }}
+                </ul>
+                <h1>{{ .Site.Params.cpd.EventsTitle }}</h1>
+                <ul>
+                  {{ range .Site.Params.cpd.event }}
+                    <li>
+                      <div>
+                          <div class="cpd-item">{{.name}} <span class="cpd-item-by"> ({{.by}}, {{.date}})</span></div>
+                      </div>
+                    </li>
+                  {{ end }}
+                </ul>
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+
+{{ if isset .Site.Data.work "call" }}
+  {{ partial "call-to-action.html" .Site.Data.work.call }}
+{{ end}}
