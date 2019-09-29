@@ -29,8 +29,10 @@
       {{ range .Site.Params.associations.item }}
       <div class="col-sm-6 col-md-3">
         <div class="service-item">
-          <img src="{{ $.Site.BaseURL }}img/{{ .image }}" alt="">
-          <h4>{{ .name }}</h4>
+          <a href="{{ .url }}">
+            <img src="{{ $.Site.BaseURL }}img/{{ .image }}" alt="">
+            <h4>{{ .name }}</h4>
+          </a>
         </div>
       </div>
       {{ end }}
