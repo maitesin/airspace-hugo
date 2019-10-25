@@ -105,8 +105,15 @@ header .navbar {
   margin-bottom: 0px;
   border: 0px;
 }
-header .navbar-brand {
-  padding-top: 5%;
+@media only screen and (max-width: 767px) {
+  header .navbar-brand {
+    padding-top: 5%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header .navbar-brand {
+    padding-top: unset;
+  }
 }
 header .navbar-default {
   background: none;
