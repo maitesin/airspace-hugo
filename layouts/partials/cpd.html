@@ -18,8 +18,8 @@
                   {{ end }}
                 </ul>
               </div> -->
-              <div class="col-md-2"></div>
-              <div class="col-md-8">
+              <div class="col-md-1"></div>
+              <div class="col-md-11">
                 <h1>{{ .Site.Params.cpd.CoursesTitle }}</h1>
                 <ul>
                   {{ range .Site.Params.cpd.course }}
@@ -30,7 +30,7 @@
                     </li>
                   {{ end }}
                 </ul>
-                <h1>{{ .Site.Params.cpd.WebinarsTitle }}</h1>
+                <h1 style="padding-top: 50px">{{ .Site.Params.cpd.WebinarsTitle }}</h1>
                 <ul>
                   {{ range .Site.Params.cpd.webinar }}
                     <li>
@@ -40,7 +40,7 @@
                     </li>
                   {{ end }}
                 </ul>
-                <h1>{{ .Site.Params.cpd.EventsTitle }}</h1>
+                <h1 style="padding-top: 50px">{{ .Site.Params.cpd.EventsTitle }}</h1>
                 <ul>
                   {{ range .Site.Params.cpd.event }}
                     <li>
@@ -51,7 +51,6 @@
                   {{ end }}
                 </ul>
               </div>
-              <div class="col-md-2"></div>
             </div>
           </div>
         </div>
