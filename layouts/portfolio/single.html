@@ -9,25 +9,32 @@
 
 	<div class="post">
 	  <!-- Wrapper Start -->
-	  <section class="section" style="border: 1px dotted #ddd;">
+	  <section class="section" style="border: 1px dotted #ddd; padding-top: 25px;">
 	    <div class="container">
+			<div class="row">
+				<div class="center-text">
+					<div class="col-md-12" style="padding-bottom: 50px;">
+						<h1 style="font-size: 48px;">{{ .Params.title }}</h1>
+					</div>
+				</div>
+			</div>
 	      <div class="row">
 	          <div class="block">
-				  <div class="col-md-12 col-md-offset-5" style="padding-bottom: 50px;">
-					  <h1 style="font-size: 48px;">{{ .Params.title }}</h1>
-				  </div>
-				  <p class="center-text" style="padding: 30px;">
 				  <div class="col-md-5">
 					  {{ with .Params.image }}<img src="{{ . | absURL }}" width="100%" alt="post-image"> {{ end }}
 				  </div>
 				  <div class="col-md-7">
 					  <p style="font-size: 16px">{{ .Content }}</p>
 				  </div>
-				  <div class="col-md-12 col-md-offset-5" style="padding-top: 50px">
-					  <a class="btn btn-main" href="{{ $.Site.BaseURL }}{{ $.Site.Params.PortfolioUrl }}">{{ $.Site.Params.PortfolioName }}</a>
-				  </div>
 	          </div>
-	        </div><!-- .col-md-7 close -->
+	        </div>
+			<div class="row">
+				<div class="center-text">
+					<div class="col-md-12" style="padding-top: 50px">
+						<a class="btn btn-main" href="{{ $.Site.BaseURL }}{{ $.Site.Params.PortfolioUrl }}">{{ $.Site.Params.PortfolioName }}</a>
+					</div>
+				</div>
+			</div>
 	    </div>
 	  </section>
 	</div>
