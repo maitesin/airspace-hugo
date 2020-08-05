@@ -43,7 +43,7 @@ h3 {
   font-weight: 300;
 }
 p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 28px;
 }
 ul {
@@ -548,7 +548,7 @@ font header .navbar-default .navbar-nav li a:hover {
   position: relative;
 }
 #portfolio-work .block .portfolio-contant ul li:hover .overly {
-  opacity: 1;
+  opacity: 0.75;
 }
 #portfolio-work .block .portfolio-contant ul li:hover .position-center {
   left: 5%;
