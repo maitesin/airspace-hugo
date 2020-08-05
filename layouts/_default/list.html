@@ -6,7 +6,7 @@
 <body>
 
 	{{ partial "header.html" . }}
-	<section id="global-header">
+	<section id="global-header" style="background-image: url({{ .Site.Params.BlogImage | absURL }})">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
